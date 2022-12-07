@@ -1,0 +1,10 @@
+@mixin h1_white {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+@mixin h2_white {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 500;
+}
