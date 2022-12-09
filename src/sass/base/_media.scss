@@ -1,4 +1,72 @@
-@media (min-width: 320px) and (max-width: 576px) {
+@media (max-width: 991px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        &__logo {
+            width: 205px;
+        }
+    }
+    .benefits {
+        &__text {
+            font-size: 13px;
+        }
+    }
+    .consultation {
+        padding: 80px 0 90px 0;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 0 10px;
+    }
+    .header {
+        &__official {
+            font-size: 11px;
+            span {
+                font-size: 14px;
+                line-height: 11px;
+            }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+        &__logo {
+            width: 180px;
+            img{
+                width: 90%;
+            }
+        }
+    }
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+    .benefits {
+        padding: 50px 0;
+        min-height: 420px;
+        &__wrapper {
+            margin-top: 45px;
+        }
+        &__item {
+            width: 170px;
+            font-size: 15px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .consultation {
+        padding: 55px 0;
+        min-height: 640px;
+    }
+}
+
+@media (max-width: 575px) {
     .xsinvisible {
         display: none;
     }
@@ -25,15 +93,11 @@
         }
     }
     .header {
-        &__logo {
-            img{
-                width: 80%;
-            }
-        }
         &__phone {
             &:hover {
                 color: #FFFFFF;
                 transition: none;
+                font-size: 16px;
             }
         }
     }
@@ -55,6 +119,18 @@
         }
         &__text {
             margin-bottom: 24px;
+        }
+    }
+    .consultation {
+        padding: 40px 0;
+        min-height: 550px;
+        &__title {
+            font-size: 26px;
+            line-height: 30px;
+        }
+        &__text {
+            line-height: 24px;
+            width: 400px;
         }
     }
 }
@@ -85,8 +161,12 @@
     .button {
         width: 136px;
         &_main {
-            width: 300px;
+            width: 270px;
             font-size: 14px;
+        }
+        &_submit {
+            width: 270px;
+            height: 50px;
         }
     }
     .benefits {
@@ -98,6 +178,25 @@
             img {
                 margin-bottom: 24px;
             }
+        }
+    }
+    .consultation {
+        padding: 20px 0;
+        min-height: 460px;
+        &__title {
+            font-size: 19px;
+            line-height: 26px;
+        }
+        &__text {
+            line-height: 20px;
+            font-size: 15px;
+            width: 270px;
+        }
+    }
+    .feed-form {
+        width: 270px;
+        input {
+            height: 42px;
         }
     }
 
