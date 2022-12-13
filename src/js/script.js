@@ -8,7 +8,17 @@ $(document).ready(function(){
                 breakpoint: 992,
                 settings: {
                     dots: true,
-                    arrows: false
+                    arrows: false,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: true,
+                    arrows: false,
+                    infinite: true,
+                    touchMove: true
                 }
             }
         ]
