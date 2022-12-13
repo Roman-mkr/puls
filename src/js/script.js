@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 200,
         fade: true,
@@ -24,4 +24,25 @@ $(document).ready(function(){
             }
         ]
     });
-  });
+  }); */
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    dots:false,
+    navText: ["<img src='icons/chevron-left-solid.png'>","<img src='icons/chevron-right-solid.png'>"],
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            dots:true
+        },
+        767: {
+            items:1,
+            nav:true,
+        },
+        991:{
+            items:1,
+        }
+    }
+})

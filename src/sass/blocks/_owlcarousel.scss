@@ -1,0 +1,27 @@
+.owl-carousel {
+    position: relative;
+    .owl-nav {
+        position: absolute;
+        width: inherit;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+        .owl-prev {
+        }
+        .owl-next {
+        }
+    }
+    .owl-item {
+        img {
+            width: 750px;
+            margin: 0 auto;
+        }
+    }
+    .owl-dots {
+        .owl-dot.active span {
+            background: $main-color;
+        }
+    }
+}
