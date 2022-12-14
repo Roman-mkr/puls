@@ -53,6 +53,7 @@ const slider = tns({
     slideBy: 'page',
 	controls: false,
 	navPosition: 'bottom',
+    mouseDrag: true,
 	responsive:{
         0:{
             items:1,
