@@ -22,7 +22,7 @@
             width: inherit;
             margin: 0 auto;
             img {
-                width: inherit;
+                width: 90%;
             }
         }
     }
@@ -32,6 +32,9 @@
                 width: 600px;
             }
         }
+    }
+    .hidden_controls {
+        display: none;
     }
 }
 @media (max-width: 767px) {
@@ -180,6 +183,13 @@
         &__icon {
             font-size: 13px;
             line-height: 13px;
+            img {
+                width: 32px;
+                height: 32px;
+            }
+            img#delivery, img#messages {
+                margin-bottom: 20px;
+            }
         }
         &__header {
             margin-top: 60px;

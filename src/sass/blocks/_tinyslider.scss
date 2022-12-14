@@ -1,0 +1,45 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -70px;
+    border: none;
+    background-color: #fff;
+    img {
+        width: 30px;
+        height: 50px;
+    }
+}
+.next {
+    left: auto;
+    right: -70px;
+}
+.tns-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    button {
+        width: 14px;
+        height: 14px;
+        background-color: silver;
+        border: none;
+        border-radius: 100%;
+        margin-right: 14px;
+    }
+    .tns-nav-active {
+        background-color: $main-color;
+    }
+}

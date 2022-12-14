@@ -24,9 +24,9 @@
             }
         ]
     });
-  }); */
+  }); slick-slider*/
 
-  $('.owl-carousel').owlCarousel({
+/*   $('.owl-carousel').owlCarousel({
     loop:true,
     nav:true,
     dots:false,
@@ -45,4 +45,31 @@
             items:1,
         }
     }
-})
+}) owlcarousel*/
+
+const slider = tns({
+    container: '.carousel__inner',
+    items: 1,
+    slideBy: 'page',
+	controls: false,
+	navPosition: 'bottom',
+    mouseDrag: true,
+	responsive:{
+        0:{
+            items:1,
+        },
+        767: {
+            items:1,
+        },
+        991:{
+            items:1,
+        }
+    }
+});
+
+document.querySelector('.prev').addEventListener ('click', function () {
+    slider.goTo('prev');
+  });
+document.querySelector('.next').addEventListener ('click', function () {
+    slider.goTo('next');
+  });
