@@ -22,4 +22,15 @@
         height: 58px;
         font-size: 16px;
     }
+    &_price {
+        width: 135px;
+        height: 36px;
+        font-size: 14px;
+        margin-top: 0;
+        transition: all 0.2s;
+        &:hover {
+            background-color: #C0C0C0;
+            color: $main-color;
+        }
+    }
 }
