@@ -271,6 +271,9 @@
 			margin-right: inherit;
 		}
 	}
+	.tns-nav button:hover {
+		box-shadow: none;
+	}
 }
 @media (max-width: 424px) {
 	.promo {
