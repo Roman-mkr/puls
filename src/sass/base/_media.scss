@@ -76,6 +76,13 @@
 			margin-right: 0;
 		}
 	}
+	.footer {
+		&__info {
+			width: 360px;
+			height: 230px;
+			padding: 30px 0 0 0;
+		}
+	}
 }
 @media (min-width: 576px) and (max-width: 767px) {   
 	.catalog-item {
@@ -182,6 +189,12 @@
 			color: #fff;
 		}
 	}
+	.footer {
+		&__info {
+			top: auto;
+			bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 575px) {
@@ -220,6 +233,11 @@
 		}
 	}
 	.button {
+		&:hover {
+			background-color: $main-color;
+			color: #fff;
+			text-shadow: none;
+		}
 		&_main {
 			height: 46px;
 		}
@@ -318,6 +336,30 @@
 			text-align: center;
 			font-size: 13px;
 			line-height: 16px;
+		}
+	}
+	.footer {
+		height: 550px;
+		&__info {
+			padding: 18px 0 0 0;
+			width: 260px;
+			height: 170px;
+		}
+		&__addr {
+			font-size: 16px;
+			line-height: 16px;
+		}
+		&__phone {
+			margin-top: 18px;
+			font-size: 18px;
+			line-height: 18px;
+			&:hover {
+				color: #fff;
+			}
+		}
+		&__social {
+			margin-top: 24px;
+			width: 186px;
 		}
 	}
 }
