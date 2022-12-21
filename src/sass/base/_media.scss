@@ -362,6 +362,29 @@
 			width: 186px;
 		}
 	}
+	.modal {
+		width: 290px;
+		min-height: 300px;
+		padding: 18px;
+		&__subtitle {
+			font-size: 15px;
+			line-height: 15px;
+		}
+		&__descr {
+			font-size: 11px;
+			line-height: 11px;
+		}
+	}
+	.feed-form_mt25 {
+		width: 254px;
+		input {
+			height: 48px;
+		}
+		.button_submit {
+			height: 50px;
+			font-size: 14px;
+		}
+	}
 }
 @media (max-width: 424px) {
 	.promo {
@@ -471,6 +494,28 @@
 	.reviews {
 		&__subtitle {
 			font-size: 24px;
+		}
+	}
+	.modal {
+		width: 250px;
+		padding: 10px;
+		&__subtitle {
+			line-height: 17px;
+		}
+		&__close {
+			right: -24px;
+			line-height: 16px;
+		}
+	}
+	.feed-form_mt25 {
+		width: 230px;
+		input {
+			height: 48px;
+		}
+		.button_submit {
+			width: 230px;
+			height: 44px;
+			font-size: 13px;
 		}
 	}
 }

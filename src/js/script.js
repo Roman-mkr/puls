@@ -99,3 +99,19 @@ $(function() {
 	toggleSlide('.catalog-item__back');
 
 })(jQuery);
+
+$(document).ready(function() {
+	// modal
+	$('[data-modal=modal_consult]').on('click', function() {
+		$('.overlay, #modal_consult').fadeIn();
+	});
+	$('.modal__close').on('click', function () {
+		$('.overlay, #modal_consult, #modal_order, #modal_feedback').fadeOut();
+	});
+	$('.button_price').each(function (i) {
+		$(this).on('click', function () {
+			$('#modal_order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #modal_order').fadeIn();
+		});
+	});
+});
