@@ -6,6 +6,10 @@
 # testing
 /coverage
 
+# post
+src/mailer/smart.php
+dist/mailer/smart.php
+
 # production
 /build
 
