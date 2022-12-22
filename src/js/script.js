@@ -121,7 +121,8 @@ $(document).ready(function() {
 				name: "required",
 				phone: {
 					required: true,
-					number: true
+					number: true,
+					minlength: 10
 				},
 				email: {
 					required: true,
@@ -132,7 +133,8 @@ $(document).ready(function() {
 				name: "Пожалуйста, введите свое имя",
 				phone: {
 					required: "Пожалуйста, введите свой номер телефона",
-					number: "Номер телефона цифрами без +"
+					number: "Введите номер цифрами без знака +",
+					minlength: jQuery.validator.format("Не менее {0} символов")
 				},
 				email: {
 					  required: "Пожалуйста, введите свой e-mail",
@@ -146,4 +148,5 @@ $(document).ready(function() {
 	validateForms('#modal_order form');
 	validateForms('#modal_consult form');
 
+/* 	$('input[name=phone]').mask("+7 (999) 999-99-99"); */
 });
