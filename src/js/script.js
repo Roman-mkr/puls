@@ -114,4 +114,36 @@ $(document).ready(function() {
 			$('.overlay, #modal_order').fadeIn();
 		});
 	});
+
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: {
+					required: true,
+					number: true
+				},
+				email: {
+					required: true,
+	
+				}
+			},
+			messages: {
+				name: "Пожалуйста, введите свое имя",
+				phone: {
+					required: "Пожалуйста, введите свой номер телефона",
+					number: "Номер телефона цифрами без +"
+				},
+				email: {
+					  required: "Пожалуйста, введите свой e-mail",
+					  email: "Введен некорректный e-mail адрес"
+				}
+			  }
+		});
+	};
+	
+	validateForms('#consultation-form');
+	validateForms('#modal_order form');
+	validateForms('#modal_consult form');
+
 });

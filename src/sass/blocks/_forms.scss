@@ -17,4 +17,19 @@
         margin: 0 auto;
         margin-top: 25px;
     }
+    .error {
+        border: 2px solid $main-color
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        margin-bottom: 10px;
+        line-height: 14px;
+        font-size: 14px;
+    }
+}
+.feed-form#consultation-form {
+    label.error {
+        color: #fff;
+    }
 }
