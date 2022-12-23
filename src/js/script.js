@@ -167,4 +167,12 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	//scroll and pageup
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1200) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
 });

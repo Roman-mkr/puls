@@ -1,6 +1,9 @@
 @import 'base/variables';
 @import 'base/mixins';
 
+html {
+	scroll-behavior: smooth;
+}
 
 * {
 	font-family: 'MuseoModerno', sans-serif;
@@ -25,5 +28,6 @@
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 
 @import 'base/media';
