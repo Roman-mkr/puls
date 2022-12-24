@@ -25,6 +25,15 @@
 			margin: 0 auto;
 			margin-bottom: 35px;
 		}
+		&_gifheart {
+			animation-name: heartbeat;
+			animation-duration: 1.3s;
+			animation-timing-function: ease-in;
+			animation-iteration-count: infinite;
+		}
+		&_gifshoe {
+			animation: runmove 2s infinite alternate, jump 2s infinite;
+		}
 	}
 	&__text {
 		margin-top: 20px;
