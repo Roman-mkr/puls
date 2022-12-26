@@ -175,4 +175,8 @@ $(document).ready(function() {
 			$('.pageup').fadeOut();
 		}
 	});
+	// wow animate.css
+	new WOW().init();
 });
+
+
